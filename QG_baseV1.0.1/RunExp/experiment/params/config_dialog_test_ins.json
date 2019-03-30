@@ -1,0 +1,50 @@
+{
+  "training": {
+    "optimizer": "adam",
+    "clip_c": 1,
+    "lrate": 0.0001
+  },
+  "management": {
+    "monitor_loss": 1000,
+    "print_samples": 20000,
+    "checkpoint_freq": 10000,
+    "gpu_index" : "2"
+  },
+  "data": {
+    "src": "../data/seq2seq_data/large/all_train_src",
+    "trg": "../data/seq2seq_data/large/all_train_trg",
+    "gui": "../data/seq2seq_data/large/all_train_gui",
+    "test_src": "./dialog/experiment/data/instances",
+    "test_trg": "./dialog/experiment/data/groundtruth",
+    "test_gui": "./dialog/experiment/data/gui",
+    "output":"./dialog/experiment/results/pred_inst.txt",
+    "batch_size": 64,
+    "n_words_trg": 30000,
+    "valid_batch_size": 64,
+    "n_words_src": 30000,
+    "max_src_length": 40,
+    "max_trg_length": 40,
+    "max_gui_length": 8,
+    "task": "chat",
+    "save_dir": "dialog/experiment/model/",
+    "load_dir": false
+  },
+  "model": {
+    "dim": 600,
+    "type_size": 8,
+    "use_dropout": false,
+    "dim_word_src": 300,
+    "dim_type_emb": 300,
+    "n_words_src": 30000,
+    "n_words": 30000,
+    "dim_word_trg": 300,
+    "n_layers_src": 2,
+    "n_layers_trg": 1,
+    "bidirectional": true,
+    "src_lang": "en",
+    "trg_lang": "en",
+    "decode": "beam",
+    "seq2seq": "dialog",
+    "optimizer": "adam"
+  }
+}
