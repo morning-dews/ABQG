@@ -3,7 +3,7 @@ This is a version of code and data for paper "Hu, W., Liu, B., Ma, J., Zhao, D. 
 
 The runing environment is pytorch0.2.0
 
-The code can be found in google drive: https://drive.google.com/file/d/1Zoj466la3rkxgS_BWNLpJmAiFA9kADxv/view?usp=sharing
+The data can be found in google drive: https://drive.google.com/file/d/1Zoj466la3rkxgS_BWNLpJmAiFA9kADxv/view?usp=sharing
 
 Please cite this paper if you use the code or data:
 
